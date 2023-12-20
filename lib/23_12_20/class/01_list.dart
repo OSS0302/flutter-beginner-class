@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beginner_class/23_12_20/00_ui_basic_Celebrity.dart';
-import 'package:flutter_beginner_class/23_12_20/model/star.dart';
+import 'package:flutter_beginner_class/23_12_20/class/00_ui_basic_Celebrity.dart';
+import 'package:flutter_beginner_class/23_12_20/class/model/star.dart';
 
 void main() {
   runApp(const MyApp());

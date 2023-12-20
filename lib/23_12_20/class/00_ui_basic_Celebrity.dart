@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_beginner_class/23_12_20/model/star.dart';
+import 'package:flutter_beginner_class/23_12_20/class/model/star.dart';
 
 void main() {
   runApp(const MyApp());
@@ -71,10 +71,10 @@ class _StarWidgetState extends State<StarWidget> {
       padding: const EdgeInsets.all(32.0),
       child: Row(
         children: [
-           Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-               Text(
+              Text(
                 widget.star.title,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -141,14 +141,13 @@ class _StarWidgetState extends State<StarWidget> {
   }
 
   Widget forthArea() {
-    return  Padding(
-      padding: const EdgeInsets.all(32.0),
-      child: Text(
-        widget.star.description,
-        overflow: TextOverflow.ellipsis,
-        maxLines: 2,
-      )
-    );
+    return Padding(
+        padding: const EdgeInsets.all(32.0),
+        child: Text(
+          widget.star.description,
+          overflow: TextOverflow.ellipsis,
+          maxLines: 2,
+        ));
   }
 }
 
