@@ -15,14 +15,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HappyBirthDay2(),
+      home: const HappyBirthDay(),
     );
   }
 }
 
-class HappyBirthDay2 extends StatelessWidget {
+class HappyBirthDay extends StatelessWidget {
   final String url ='https://thumb.ac-illust.com/c4/c463cee04d1f0809b06b396d681b02b7_t.jpeg';
-  const HappyBirthDay2({super.key});
+  const HappyBirthDay({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class HappyBirthDay2 extends StatelessWidget {
               ),
         
             ),
-            Center(
+            const Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
