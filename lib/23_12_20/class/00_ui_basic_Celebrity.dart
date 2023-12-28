@@ -8,6 +8,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
             sbuTitle: '아이유는 아이가 아니라 어른 이에요',
             imageUrl:
                 'https://health.chosun.com/site/data/img_dir/2023/04/04/2023040401590_0.jpg',
-            description: '아이는 31살이에요'),
+            description: '아이는 31살이에요', id: 1),
       ),
     );
   }
@@ -76,7 +77,7 @@ class _StarWidgetState extends State<StarWidget> {
             children: [
               Text(
                 widget.star.title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
